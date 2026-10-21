@@ -1,92 +1,56 @@
 # TWRP for Moto G Play 2024 (fogona)
 
-Unofficial **TWRP recovery** build for the **Moto G Play 2024**, codename **fogona**.
+Unofficial TWRP recovery for the Motorola Moto G Play 2024 (`fogona`).
 
-> ⚠️ **Disclaimer:** This recovery is provided as-is. I am not responsible for bricked devices, lost data, broken partitions, or any other damage caused by using this recovery. **Use at your own risk.**
+**Status: experimental.** TWRP boots and the touchscreen works. Nothing else has been verified yet, because the development device is no longer working. Testers are welcome.
 
-## 📱 Device
+## Device
 
-* **Device:** Motorola Moto G Play 2024
-* **Codename:** `fogona`
-* **Recovery:** TWRP
-* **Status:** 🟡 **Testing**
+| | |
+| --- | --- |
+| Model | Motorola Moto G Play 2024 |
+| Codename | `fogona` |
+| Recovery | TWRP (unofficial) |
 
-## ✅ Working
+## Feature status
 
-The following has been confirmed working:
+| Feature | Status |
+| --- | --- |
+| Boots to TWRP | Working |
+| Touchscreen | Working |
+| ADB | Untested |
+| MTP | Untested |
+| Backup / restore | Untested |
+| Flashing ZIPs | Untested |
+| Flashing images | Untested |
+| SD card | Untested |
+| USB OTG | Untested |
+| Decryption | Not expected to work |
 
-* [x] TWRP boots
-* [x] Touchscreen works
-* [ ] Backup / Restore
-* [ ] Decryption - expected to fail
-* [ ] ADB
-* [ ] MTP
-* [ ] SD card
-* [ ] USB OTG
-* [ ] Flashing ZIPs
-* [ ] Flashing images
-* [ ] Other features — **not fully tested**
+## Before you start
 
-### Touchscreen
+- **Use this at your own risk.** This build is provided as-is, without warranty. The author isn't responsible for bricked devices, data loss or damaged partitions.
+- **Back up your data** before you flash or boot anything.
+- **Know how to recover your device** (for example with your stock firmware and fastboot) before you try this.
+- If you only want to test it, use `fastboot boot` instead of flashing it. Check first whether your device supports this.
 
-**Touchscreen is confirmed working in TWRP.**
+## Testing and bug reports
 
-Other functionality has not been completely tested yet.
+The original test device is broken, so further testing depends on the community. If you have a Moto G Play 2024, please report what works as well as what doesn't. Confirming that a feature works is just as useful.
 
-## 🧪 Testing Status
+When you open an issue, please include:
 
-This is an **early/unofficial build**, and I was unable to fully test it.
+- the TWRP build you used
+- what you did, what you expected, and what happened instead
+- the exact error messages
+- the recovery log (`/tmp/recovery.log`; save it with **Advanced → Copy Log**, or pull it with `adb pull /tmp/recovery.log`)
+- steps to reproduce the problem
 
-My original Moto G Play 2024 unfortunately broke, so I can no longer personally test new builds or verify every TWRP feature.
+## Contributing
 
-If you have a **Moto G Play 2024 (fogona)** and decide to test this recovery, please report anything that does or does not work.
+Pull requests, logs and test reports are welcome. Open an issue first to discuss larger changes.
 
-## 🐛 Bug Reports
+## Credits
 
-If you find a bug, please open a **GitHub Issue** and include as much information as possible.
-
-Please provide:
-
-* Device: Moto G Play 2024 (`fogona`)
-* TWRP version/build
-* What you were trying to do
-* What happened
-* What you expected to happen
-* Any error messages
-* Recovery logs, if available
-* Steps to reproduce the issue
-
-## 📋 Known Limitations
-
-* This recovery has **not been fully tested**.
-* Some TWRP features may not work correctly.
-* Hardware and partition-related functionality may still have bugs.
-* I currently cannot perform additional testing because my original device is no longer functional.
-
-## 🤝 Contributions & Testing
-
-If you own a **Moto G Play 2024 (fogona)**, testing is greatly appreciated.
-
-Please report both **working and broken features**. Even something as simple as confirming that a feature works can be useful.
-
-If you are able to help with development, logs, testing, or fixes, feel free to open an issue or submit a pull request.
-
-## ⚠️ Important
-
-Before flashing or booting anything, make sure you know how to recover your device if something goes wrong.
-
-**Keep a backup of your important data.**
-
----
-
-### Credits
-
-* [Team Win Recovery Project (TWRP)](https://twrp.me/)
-* Everyone who contributed to TWRP and Android recovery development
-* Moto G Play 2024 (`fogona`) testers and contributors
-
----
-
-**Status:** 🟡 Experimental / Community Testing
-
-If you test this recovery, **please report your results!**
+- [Team Win Recovery Project](https://twrp.me/) and everyone who contributes to TWRP
+- Everyone who tests and contributes to this build for `fogona`
